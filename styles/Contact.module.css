@@ -1,0 +1,38 @@
+.general{
+    position: fixed;
+    z-index: 4;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20vw;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    transform: translateY(100px);
+    visibility: hidden;
+    transition: visibility .5s ease, transform .5s ease;
+}
+.contacts span{
+
+    margin-bottom: 10px;
+}
+.general span{
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+.general span>*{
+    border-radius: 200px;
+    box-shadow: 0px 3.5px 48px 6.3px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1000px){
+    .trigger span, .contacts span:hover{
+        opacity: .7;
+    }
+    .trigger span:hover, .contacts span{
+        opacity: 1;
+    }
+}

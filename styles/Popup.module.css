@@ -1,0 +1,107 @@
+.general{
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    z-index: 10;
+}
+.general>span:nth-child(1){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+
+}
+.content{
+    position: relative;
+    background-color: white;
+    border-radius: 15.78px;
+    padding: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.content h3{
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--monochrome1);
+}
+.content p{
+    font-family: 'Inter';
+    color: var(--monochrome2);
+}
+.image{
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 30vh;
+}
+.content span:nth-child(1){
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--iris5);
+    padding: 0.4rem;
+    border-radius: 20%;
+    display: flex;
+    max-width: 30px;
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+.content span:nth-child(1):hover{
+    opacity: .7;
+}
+.btn{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.email{
+    margin-bottom: .5rem;
+}
+.btn>div{
+    margin: 0 !important;
+    padding: 15px 40px !important;
+}
+.form{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.input{
+    border: none;
+    outline: none;
+    background-color: var(--monochrome4);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    color: var(--monochrome1);
+    margin-bottom: 10px;
+    min-width: 70%;
+    max-width: 100%;
+}
+@media(min-width: 1025px){
+    .content{
+        max-width: 40%;
+    }
+    .content p, .input{
+        font-size: var(--desktop-body-2);
+    }
+}
+@media(min-width: 700) and (max-width:1025px){
+    .content p, .input{
+        font-size: var(--tablet-body-2);
+    }
+}
+@media(max-width:700px){
+    .content p, .input{
+        font-size: var(--mobile-body-2);
+    }
+}

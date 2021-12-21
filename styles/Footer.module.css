@@ -1,0 +1,49 @@
+.general{
+    background: #161616;
+    color: var(--monochrome5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px 80px 50px 80px;
+    flex-direction: column;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.copyright p{
+    text-align: center;
+    color: var(--monochrome4);
+    position: relative;
+    top: 30px;
+}
+.general p{
+    margin: 0;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin: 0px 0 15px 0;
+    transition: all 0.2s ease-in-out;
+}
+.contact:hover{
+    opacity: .9;
+}
+.sns h5{
+    margin-bottom: 15px;
+}
+@media(max-width: 900px){
+    .general{
+
+        padding: 3rem 2rem;
+    }
+    .description{
+        flex-direction: column;
+        top: -1rem;
+    }
+    .contact{
+        font-size: 12px;
+    }
+}
